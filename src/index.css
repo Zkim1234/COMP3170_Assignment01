@@ -1,0 +1,104 @@
+:root {
+  --navy: #19183B;
+  --dark-teal: #708993;
+  --teal:#A1C2BD;
+  --light-teal:#E7F2EF;
+  --ivory: #F5F5F5;
+  --text-color: #333333;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: var(--ivory);
+}
+
+html, body, #root, .appContainer {
+  margin:0;
+  height: 100%;
+  padding:0;
+  display: flex;
+  flex-direction: column;
+}
+.heading{
+  color: var(--navy);
+  text-align: center;
+  padding:2rem;
+  margin-bottom:2rem;
+  font-size: 2rem;
+  color: white;
+  background-color: var(--navy)
+}
+.section{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2rem;
+  gap: 2rem;
+  flex: 1;
+}
+.newContainer{
+  border: 2px solid var(--dark-teal);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 1rem;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 13em;
+  height: 20em;
+}
+.imageContainer img{
+  width: 150px;
+  
+}
+.bookDetails{
+  border: 2px solid var(--dark-teal);
+  border-radius: 8px;
+  background-color: white;
+  padding: 10px;
+  margin: 1rem;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  width: 13em;
+  height: 20em;
+}
+.title{
+  text-align: center;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.author{
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 0.5rem 0;
+}
+
+.viewDetailsButton{
+  background-color: var(--teal);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.viewDetailsButton:hover{
+  background-color: var(--dark-teal);
+}
+
+.newContainer:hover{
+  background-color: var(--dark-teal);
+  color: white;
+}
+
+.footer{
+  text-align: center;
+  font-size: 0.8rem;
+  background-color: var(--navy);
+  color: white;
+  padding: 1em;
+}
